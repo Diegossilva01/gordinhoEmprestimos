@@ -28,6 +28,10 @@ Envie estes arquivos para a raiz do repositório:
 - `config.js`
 - `favicon.svg`
 - `logo-gordinho.png`
+- `skin.css`
+- `screens.js`
+- `cotacao.html`
+- `quote.js`
 
 No `config.js`, substitua `COLE_A_URL_DO_GOOGLE_SCRIPT_AQUI` pela URL `/exec`. Apenas essa URL é pública; não coloque senha, token, ID de sessão ou propriedades do script nesse arquivo.
 
@@ -98,3 +102,12 @@ Esta versão tem uma única conta administrativa. Não há envios automáticos d
 Google Planilhas não oferece transações completas de banco de dados. Não altere a planilha enquanto o site estiver gravando dados. Para grande volume de registros, a leitura integral das quatro abas precisará evoluir para consultas paginadas. As quotas do Google Apps Script também se aplicam.
 
 Referências de implementação: https://developers.google.com/apps-script/guides/web e https://developers.google.com/apps-script/guides/content.
+
+
+## Nova interface e página do cliente
+
+Menu lateral escuro, tema claro/escuro, dashboard ampliado, simulador, caixa com movimentos automáticos e relatórios por período. A troca de senha está em Configurações. Os arquivos do Google Script e a planilha permanecem os mesmos nesta atualização.
+
+`cotacao.html` é uma calculadora pública acessível pelo link Sou cliente na tela de login. A taxa começa em 10% apenas como cenário ilustrativo e é editável pelo visitante. Ela não publica uma taxa oficial, não aprova crédito, não coleta dados e não grava empréstimos. A taxa comercial efetiva ainda precisa ser definida por você.
+
+O controle de caixa soma pagamentos válidos e desconta liberações de empréstimos e despesas, a partir de zero. Não inclui aportes nem saldo bancário anterior. A versão continua com uma conta administrativa e juros simples fixos por contrato; crédito rotativo e renegociação automática não estão incluídos.
